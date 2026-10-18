@@ -1,3 +1,24 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [@jeftelabs/string](#jeftelabsstring)
+  - [Instalação](#instala%C3%A7%C3%A3o)
+  - [Uso](#uso)
+  - [Helpers](#helpers)
+    - [Truncamento e excertos](#truncamento-e-excertos)
+    - [Slugs](#slugs)
+    - [Interpolação](#interpola%C3%A7%C3%A3o)
+    - [Pluralização](#pluraliza%C3%A7%C3%A3o)
+    - [Conversão de caixa](#convers%C3%A3o-de-caixa)
+    - [Formatação e composição de texto](#formata%C3%A7%C3%A3o-e-composi%C3%A7%C3%A3o-de-texto)
+    - [Outros helpers](#outros-helpers)
+  - [Documentação](#documenta%C3%A7%C3%A3o)
+  - [Contribuição](#contribui%C3%A7%C3%A3o)
+  - [Licença](#licen%C3%A7a)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # @jeftelabs/string
 
 > Biblioteca ESM escrita em TypeScript, com helpers para transformar strings, formatar texto e apresentar durações e tamanhos em bytes.
