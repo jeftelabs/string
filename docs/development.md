@@ -64,6 +64,7 @@ Workflows presentes em `.github/workflows/`:
 - `checks.yml` roda ao fazer `push` em `main`; configura Node LTS e valida mensagens de commit com commitlint. Apesar de conter uma condição para commits de pull request, o gatilho atual do workflow não inclui `pull_request`.
 - `release.yml` roda em `push` para `main` e usa Release Please. Quando cria um release, instala dependências, constrói o pacote e anexa o resultado de `npm pack` à release.
 - `deploy.yml` reage à publicação de uma release e publica o pacote no GitHub Packages e no npm. Configura Node 24, executa `npm ci`, `npm run build` e `npm publish` em cada registry.
+- `toc.yml` atualiza o sumário do README e faz push do commit `chore(docs): update TOC`; por isso declara `permissions: contents: write`. Sem essa permissão o `GITHUB_TOKEN` é somente leitura e o push falha com 403.
 - `toc.yml`, `stale.yml` e `labels.yml` automatizam tarefas de issue/PR e manutenção do repositório; não fazem parte da execução da biblioteca.
 
 Estas descrições refletem o YAML local; não significam que as workflows tenham sido executadas ou que os segredos de publicação estejam disponíveis.
